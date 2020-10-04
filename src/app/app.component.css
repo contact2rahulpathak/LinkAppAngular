@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 50%;
+  }
+
+.textClass{
+  color: coral;
+  }
+
+.column .highlight span { 
+  background-color: rebeccapurple ; 
+  }

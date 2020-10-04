@@ -1,0 +1,13 @@
+<p>providers </p>
+
+<div class="row">
+    <div class="column">
+        <img  class="images" src="{{provider.pimg}}" onError="this.src='assets/default.png'"/>
+    </div>
+    <div class="column">
+        <div [style.font-weight]="'bold'">{{provider.attributes.name}}</div>
+        <div class="pad-top" *ngIf= "provider.subspecialties">
+            <li *ngFor="let specs of provider.subspecialties;">{{specs}}</li>
+        </div>
+    </div>
+</div>
